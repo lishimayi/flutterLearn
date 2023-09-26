@@ -40,7 +40,7 @@ void main(List<String> args) {
  list.add(""); 
 // person
 
-Person ap = new Person();
+Person ap = new Person('小明',1,'some');
 print(ap.name);
 
 }

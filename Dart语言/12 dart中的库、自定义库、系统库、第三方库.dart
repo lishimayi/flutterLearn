@@ -25,14 +25,17 @@ import 'dart:io';
 import 'dart:convert';
 
 void main(List<String> args) async {
-  var result = await _getData();
+  final result = _getData();
   print(result);
 }
 
-_getData() async {
-  var httpClient = HttpClient();
-  var uri = Uri.http('news-at.zhihu.com','/api/3/stories/latest');
-  var request = await httpClient.getUrl(uri);
-  var response = request.close();
-  return await response.transform(utf8.decoder).join();
+Future _getData() async {
+  HttpClient httpClient = HttpClient();
+  Uri uri = Uri.http('news-at.zhihu.com','/api/3/stories/latest');
+  HttpClientRequest request = await httpClient.getUrl(uri);
+  HttpClientResponse response = await request.close();
+
+  final data = await response.transform(utf8.decoder).join();
+  // print(data);
+  return data;
 }
