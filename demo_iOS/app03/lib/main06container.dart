@@ -10,60 +10,10 @@ void main() {
         children: const [
           MyApp(),
           MyButton(),
-          MyText(),
-          MyImage(),
         ],
       ), // const MyApp(),
     ),
   ));
-}
-
-class MyImage extends StatelessWidget {
-  const MyImage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 150,
-      height: 150,
-      decoration: const BoxDecoration(
-        color: Colors.yellow,
-      ),
-      child: Image.network(
-        "https://www.baidu.com/img/pcguoqing_fc97127958bbaff5dbb6b51b665665ea.gif",
-        fit: BoxFit.cover,
-      ),
-    );
-  }
-}
-
-class MyText extends StatelessWidget {
-  const MyText({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 100,
-      height: 40,
-      // color: Colors.black,
-      decoration: const BoxDecoration(
-        color: Colors.blue,
-      ),
-      child: const Text(
-        "我是一个texasdasdasddddddddddddddddt",
-        textAlign: TextAlign.center,
-        overflow: TextOverflow.ellipsis,
-        maxLines: 2,
-        style: TextStyle(
-          color: Colors.white,
-          fontStyle: FontStyle.italic,
-          decoration: TextDecoration.underline, // 下划线
-          decorationColor: Colors.black,
-          decorationStyle: TextDecorationStyle.dotted,
-        ),
-      ),
-    );
-  }
 }
 
 class MyApp extends StatelessWidget {

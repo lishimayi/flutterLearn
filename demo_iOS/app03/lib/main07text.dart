@@ -11,30 +11,10 @@ void main() {
           MyApp(),
           MyButton(),
           MyText(),
-          MyImage(),
         ],
       ), // const MyApp(),
     ),
   ));
-}
-
-class MyImage extends StatelessWidget {
-  const MyImage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 150,
-      height: 150,
-      decoration: const BoxDecoration(
-        color: Colors.yellow,
-      ),
-      child: Image.network(
-        "https://www.baidu.com/img/pcguoqing_fc97127958bbaff5dbb6b51b665665ea.gif",
-        fit: BoxFit.cover,
-      ),
-    );
-  }
 }
 
 class MyText extends StatelessWidget {
@@ -57,7 +37,7 @@ class MyText extends StatelessWidget {
         style: TextStyle(
           color: Colors.white,
           fontStyle: FontStyle.italic,
-          decoration: TextDecoration.underline, // 下划线
+          decoration: TextDecoration.underline,// 下划线
           decorationColor: Colors.black,
           decorationStyle: TextDecorationStyle.dotted,
         ),
