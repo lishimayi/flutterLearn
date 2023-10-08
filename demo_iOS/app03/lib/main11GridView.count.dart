@@ -20,8 +20,11 @@ class MyAppHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView.extent(
-      maxCrossAxisExtent: 40,// 横轴子元素最大宽度
+    return GridView.count(
+      crossAxisCount: 3,// count of items in per line
+      crossAxisSpacing: 2,// horizental space
+      mainAxisSpacing: 2,// vertical space
+      childAspectRatio: 1,// sub element with:height
       children: const [
         Icon(Icons.baby_changing_station),
         Icon(Icons.baby_changing_station),
