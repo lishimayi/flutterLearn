@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, sort_child_properties_last
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -70,7 +72,7 @@ class MyBoxDecorationImage extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.yellow,
         borderRadius: BorderRadius.circular(75),
-        image: DecorationImage(
+        image: const DecorationImage(
           // image: ImageProvider,
           image: NetworkImage(
               "https://t7.baidu.com/it/u=4162611394,4275913936&fm=193"),

@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import, unnecessary_type_check
+
 import 'dart:ffi';
 
 /**
@@ -29,7 +31,6 @@ class Person {
 }
 
 void main(List<String> args) {
-  Person ap;
   // ap?.getSome();
   // var b = "";
   var b = new Person();

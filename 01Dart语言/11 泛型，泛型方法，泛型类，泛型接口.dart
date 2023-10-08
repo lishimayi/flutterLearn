@@ -47,13 +47,12 @@ abstract class Cahe<T> {
 class FileCache<T> implements Cahe<T> {// 使用泛型接口
   @override
   getByKey(String key) {
-    // TODO: implement getByKey
     throw UnimplementedError();
   }
 
   @override
   void setBykey(String key, value) {
-    // TODO: implement setBykey
+
   }
 }
 

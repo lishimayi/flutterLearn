@@ -15,6 +15,7 @@ void main() {
 
 class MyAppHomePage extends StatelessWidget {
   MyAppHomePage({super.key}) {
+    // ignore: avoid_print
     print(listData);
   }
   List<Widget> _initData() {

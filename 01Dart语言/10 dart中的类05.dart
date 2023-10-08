@@ -1,4 +1,6 @@
 // 10 dart中的类05.dart
+// ignore_for_file: unused_import
+
 import 'dart:html';
 
 /**
@@ -16,7 +18,7 @@ abstract class B {
 class C implements A,B {// this is point
   @override
   printA() {
-    // TODO: implement printA
+
     throw UnimplementedError();
   }
   
@@ -25,7 +27,7 @@ class C implements A,B {// this is point
   
   @override
   printB() {
-    // TODO: implement printB
+
     throw UnimplementedError();
   }
 

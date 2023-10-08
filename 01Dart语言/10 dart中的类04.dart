@@ -31,19 +31,18 @@ class Mysql implements Db {
 
   @override
   add() {
-    // TODO: implement add
+
     throw UnimplementedError();
   }
 
   @override
   delete() {
-    // TODO: implement delete
     throw UnimplementedError();
   }
 
   @override
   save() {
-    // TODO: implement save
+
     throw UnimplementedError();
   }
 
