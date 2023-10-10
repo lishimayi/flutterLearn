@@ -1,39 +1,19 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'res/listdata.dart';
 
-void main() {
+void main(List<String> args) {
   runApp(MaterialApp(
     theme: ThemeData(
-      primarySwatch: Colors.yellow, // 基本样式，影响导航色
+      primarySwatch: Colors.red,
     ),
     home: Scaffold(
-      appBar: AppBar(title: const Text("lei hou")),
-      body: MyAppHomePage(),
+      appBar: AppBar(
+        title: Text("hi flutter"),
+      ),
+      body: Text("asd"),
     ),
   ));
 }
 
-class MyAppHomePage extends StatelessWidget {
-  const MyAppHomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return GridView.extent(
-      maxCrossAxisExtent: 40,// 横轴子元素最大宽度
-      children: const [
-        Icon(Icons.baby_changing_station),
-        Icon(Icons.baby_changing_station),
-        Icon(Icons.baby_changing_station),
-        Icon(Icons.baby_changing_station),
-        Icon(Icons.baby_changing_station),
-        Icon(Icons.baby_changing_station),
-        Icon(Icons.baby_changing_station),
-        Icon(Icons.baby_changing_station),
-        Icon(Icons.baby_changing_station),
-        Icon(Icons.baby_changing_station),
-      ],
-    );
-  }
-}
+class MyApp {}
